@@ -24,7 +24,10 @@ namespace TravelAgency.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        public DbSet<Country> Countries { get; set; }
+        public DbSet<Resort> Resorts { get; set; }
+        public DbSet<Hotel> Hotels { get; set; }
+        public DbSet<Tour> Tours { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
