@@ -12,5 +12,12 @@ namespace TravelAgency.Models
         public DateTime Date { get; set; }
         public int HotelId { get; set; }
         public Hotel Hotel { get; set; }
+        public List<BookedTour> BookedTours { get; set; }
+        public List<FavoriteTour> FavoriteTours { get; set; }
+        public Tour()
+        {
+            BookedTours = new List<BookedTour>();
+            FavoriteTours = new List<FavoriteTour>();
+        }
     }
 }

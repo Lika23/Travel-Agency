@@ -13,9 +13,11 @@ namespace TravelAgency.Models
         public string Population { get; set; }
         public string OfficialLanguage { get; set; }
         public List<Resort> Resorts { get; set; }
+        public List<Picture> Pictures { get; set; }
         public Country()
         {
             Resorts = new List<Resort>();
+            Pictures = new List<Picture>();
         }
     }
 }

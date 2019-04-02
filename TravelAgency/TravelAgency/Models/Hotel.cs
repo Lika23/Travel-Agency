@@ -15,9 +15,12 @@ namespace TravelAgency.Models
         public int ResortId { get; set; }
         public Resort Resort { get; set; }
         public List<Tour> Tours { get; set; }
+        public List<Picture> Pictures { get; set; }
+        
         public Hotel()
         {
             Tours = new List<Tour>();
+            Pictures = new List<Picture>();
         }
     }
 }
