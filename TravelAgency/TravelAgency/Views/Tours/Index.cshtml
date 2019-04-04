@@ -25,22 +25,22 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Hotel.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TourId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TourId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TourId })
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Hotel.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Date)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.TourId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.TourId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.TourId })
+    </td>
+</tr>
 }
 
 </table>
